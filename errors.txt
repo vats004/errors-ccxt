@@ -1,9 +1,3 @@
-Obtaining Git commit
-Storing variables in file
-Commit: b08c5faa749ae033028526ef2db5259ef2a68357
-Date: 2025-02-09
-Stored all in compile_info_real.h
-Done.
 In file included from ../src/lib_ccx/ccx_decoders_xds.c:1:
 ../src/lib_ccx/ccx_decoders_xds.h:15:6: warning: a function declaration without a prototype is deprecated in all versions of C and is treated as a zero-parameter prototype in C2x, conflicting with a subsequent definition [-Wdeprecated-non-prototype]
    15 | void xds_cea608_test();
@@ -17,10 +11,6 @@ In file included from ../src/lib_ccx/ccx_decoders_xds.c:1:
       |                                           ~~~~~      ^~~~~~~~~~
       |                                           %04llx
 1 warning generated.
-../src/lib_ccx/mp4.c:5:10: fatal error: 'gpac/isomedia.h' file not found
-    5 | #include <gpac/isomedia.h>
-      |          ^~~~~~~~~~~~~~~~~
-1 error generated.
 ../src/lib_ccx/telxcc.c:1350:48: warning: format specifies type 'unsigned long' but the argument has type 'uint64_t' (aka 'unsigned long long') [-Wformat]
  1350 |                 printf("Packet start code prefix: %04lx # ", pes_prefix);
       |                                                   ~~~~~      ^~~~~~~~~~
@@ -36,10 +26,6 @@ In file included from ../src/lib_ccx/ccx_decoders_xds.c:1:
    47 |   __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
       |                                                        ^~~~~~~~~~~
 1 warning generated.
-../src/lib_ccx/params.c:4:10: fatal error: 'gpac/setup.h' file not found
-    4 | #include "gpac/setup.h"
-      |          ^~~~~~~~~~~~~~
-1 error generated.
 In file included from ../src/lib_ccx/zvbi/sampling_par.c:26:
 ../src/lib_ccx/zvbi/misc.h:371:11: warning: 'strlcpy' macro redefined [-Wmacro-redefined]
   371 | #  define strlcpy _vbi_strlcpy
@@ -532,79 +518,8 @@ In file included from ../src/lib_ccx/zvbi/decoder.c:30:
   180 | uLong ZEXPORT adler32_combine64(adler1, adler2, len2)
       |               ^
 5 warnings generated.
-In file included from ../src/thirdparty/freetype/gzip/ftgzip.c:77:
-In file included from ../src/thirdparty/freetype/gzip/zlib.h:34:
-../src/thirdparty/freetype/gzip/ftzconf.h:228:12: error: unknown type name 'Byte'
-  228 |    typedef Byte  FAR Bytef;
-      |            ^
-In file included from ../src/thirdparty/freetype/gzip/ftgzip.c:95:
-../src/thirdparty/freetype/gzip/inftrees.h:22:7: error: unknown type name 'Byte'
-   22 |       Byte Exop;        /* number of extra bits or operation */
-      |       ^
-../src/thirdparty/freetype/gzip/inftrees.h:23:7: error: unknown type name 'Byte'
-   23 |       Byte Bits;        /* number of bits in this code or subcode */
-      |       ^
 In file included from ../src/thirdparty/freetype/gzip/ftgzip.c:103:
-../src/thirdparty/freetype/gzip/inftrees.c:247:21: error: use of undeclared identifier 'Byte'
-  247 |           r.bits = (Byte)l;     /* bits to dump before this table */
-      |                     ^
-../src/thirdparty/freetype/gzip/inftrees.c:248:21: error: use of undeclared identifier 'Byte'
-  248 |           r.exop = (Byte)j;     /* bits in this table */
-      |                     ^
-../src/thirdparty/freetype/gzip/inftrees.c:258:17: error: use of undeclared identifier 'Byte'
-  258 |       r.bits = (Byte)(k - w);
-      |                 ^
-../src/thirdparty/freetype/gzip/inftrees.c:263:19: error: use of undeclared identifier 'Byte'
-  263 |         r.exop = (Byte)(*p < 256 ? 0 : 32 + 64);     /* 256 is end-of-block */
-      |                   ^
-../src/thirdparty/freetype/gzip/inftrees.c:268:19: error: use of undeclared identifier 'Byte'
-  268 |         r.exop = (Byte)(e[*p - s] + 16 + 64);/* non-simple--look up in lists */
-      |                   ^
-In file included from ../src/thirdparty/freetype/gzip/ftgzip.c:105:
-../src/thirdparty/freetype/gzip/infcodes.c:50:3: error: unknown type name 'Byte'
-   50 |   Byte lbits;           /* ltree bits decoded per branch */
-      |   ^
-../src/thirdparty/freetype/gzip/infcodes.c:51:3: error: unknown type name 'Byte'
-   51 |   Byte dbits;           /* dtree bits decoder per branch */
-      |   ^
-../src/thirdparty/freetype/gzip/infcodes.c:70:17: error: use of undeclared identifier 'Byte'
-   70 |     c->lbits = (Byte)bl;
-      |                 ^
-../src/thirdparty/freetype/gzip/infcodes.c:71:17: error: use of undeclared identifier 'Byte'
-   71 |     c->dbits = (Byte)bd;
-      |                 ^
-../src/thirdparty/freetype/gzip/infcodes.c:204:9: error: use of undeclared identifier 'Byte'
-  204 |         OUTBYTE(*f++)
-      |         ^
-../src/thirdparty/freetype/gzip/infutil.h:83:27: note: expanded from macro 'OUTBYTE'
-   83 | #define OUTBYTE(a) {*q++=(Byte)(a);m--;}
-      |                           ^
-In file included from ../src/thirdparty/freetype/gzip/ftgzip.c:105:
-../src/thirdparty/freetype/gzip/infcodes.c:213:7: error: use of undeclared identifier 'Byte'
-  213 |       OUTBYTE(c->sub.lit)
-      |       ^
-../src/thirdparty/freetype/gzip/infutil.h:83:27: note: expanded from macro 'OUTBYTE'
-   83 | #define OUTBYTE(a) {*q++=(Byte)(a);m--;}
-      |                           ^
-../src/thirdparty/freetype/gzip/ftgzip.c:317:23: warning: incompatible pointer types assigning to 'Bytef *' (aka 'int *') from 'FT_Byte[4096]' (aka 'unsigned char[4096]') [-Wincompatible-pointer-types]
-  317 |     zstream->next_in  = zip->buffer;
-      |                       ^ ~~~~~~~~~~~
-../src/thirdparty/freetype/gzip/ftgzip.c:366:26: warning: incompatible pointer types assigning to 'Bytef *' (aka 'int *') from 'FT_Byte[4096]' (aka 'unsigned char[4096]') [-Wincompatible-pointer-types]
-  366 |       zstream->next_in   = zip->input;
-      |                          ^ ~~~~~~~~~~
-../src/thirdparty/freetype/gzip/ftgzip.c:368:26: warning: incompatible pointer types assigning to 'Bytef *' (aka 'int *') from 'FT_Byte[4096]' (aka 'unsigned char[4096]') [-Wincompatible-pointer-types]
-  368 |       zstream->next_out  = zip->buffer;
-      |                          ^ ~~~~~~~~~~~
-../src/thirdparty/freetype/gzip/ftgzip.c:413:23: warning: incompatible pointer types assigning to 'Bytef *' (aka 'int *') from 'FT_Byte[4096]' (aka 'unsigned char[4096]') [-Wincompatible-pointer-types]
-  413 |     zstream->next_in  = zip->input;
-      |                       ^ ~~~~~~~~~~
-../src/thirdparty/freetype/gzip/ftgzip.c:428:24: warning: incompatible pointer types assigning to 'Bytef *' (aka 'int *') from 'FT_Byte *' (aka 'unsigned char *') [-Wincompatible-pointer-types]
-  428 |     zstream->next_out  = zip->cursor;
-      |                        ^ ~~~~~~~~~~~
-../src/thirdparty/freetype/gzip/ftgzip.c:447:20: warning: incompatible pointer types assigning to 'FT_Byte *' (aka 'unsigned char *') from 'Bytef *' (aka 'int *') [-Wincompatible-pointer-types]
-  447 |         zip->limit = zstream->next_out;
-      |                    ^ ~~~~~~~~~~~~~~~~~
-../src/thirdparty/freetype/gzip/ftgzip.c:746:22: warning: incompatible pointer types assigning to 'Bytef *' (aka 'int *') from 'FT_Byte *' (aka 'unsigned char *') [-Wincompatible-pointer-types]
-  746 |     stream.next_out  = output;
-      |                      ^ ~~~~~~
-7 warnings and 14 errors generated.
+../src/thirdparty/freetype/gzip/inftrees.c:260:22: warning: implicit conversion from 'int' to 'Byte' (aka 'char') changes value from 192 to -64 [-Wconstant-conversion]
+  260 |         r.exop = 128 + 64;      /* out of values--invalid code */
+      |                ~ ~~~~^~~~
+1 warning generated.
